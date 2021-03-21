@@ -3,7 +3,7 @@
   "name": "twind-intellisense",
   "displayName": "Twind Intellisense",
   "description": "Intelligent Twind tooling for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "preview": true,
   "publisher": "sastan",
   "icon": "assets/logo.png",
@@ -112,7 +112,7 @@
     ]
   },
   "dependencies": {
-    "@twind/typescript-plugin": "0.3.0"
+    "@twind/typescript-plugin": "0.3.1"
   },
   "main": "./out/extension.js",
   "scripts": {

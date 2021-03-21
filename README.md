@@ -31,8 +31,6 @@ Provides editor support for `tw` tagged template syntax including:
 
 **[Install via the Visual Studio Code Marketplace →](https://marketplace.visualstudio.com/items?itemName=sastan.twind-intellisense)**
 
-**[Install via the Open VSX Registry →](https://open-vsx.org/extension/sastan/twind-intellisense)**
-
 ## Usage
 
 The twind extension adds highlighting and IntelliSense for Twind classes in JavaScript and TypeScript. It works out of the box when you use VS Code's built-in version of TypeScript.
