@@ -66,7 +66,7 @@ declare module 'twind' {
 
 ## Configuration
 
-You can either configure the plugin using VS Code (Extensions - Twind) or configure this plugin using a `tsconfig` or `jsconfig` as described [here](https://github.com/tw-in-js/typescript-plugin/blob/main/LICENSE#usage). This requires VS Code 1.53+ and TS 4.1+. Note the VS Code based configuration override the `tsconfig` or `jsconfig` configuration.
+You can either configure the plugin using VS Code (Extensions - Twind) or configure this plugin using a `tsconfig` or `jsconfig` as described [here](https://github.com/tw-in-js/typescript-plugin/#with-vs-code). This requires VS Code 1.53+ and TS 4.1+. Note the VS Code based configuration override the `tsconfig` or `jsconfig` configuration.
 
 This extension contributes the following settings:
 
