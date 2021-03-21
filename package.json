@@ -1,0 +1,139 @@
+{
+  "private": true,
+  "name": "twind-intellisense",
+  "displayName": "Twind Intellisense",
+  "description": "Intelligent Twind tooling for VS Code",
+  "version": "0.0.1",
+  "preview": true,
+  "publisher": "sastan",
+  "icon": "assets/logo.png",
+  "galleryBanner": {
+    "color": "#fcfcfc",
+    "theme": "light"
+  },
+  "bugs": "https://github.com/tw-in-js/vscode-twind-intellisense/issues",
+  "repository": "github:tw-in-js/vscode-twind-intellisense",
+  "license": "MIT",
+  "author": "Sascha Tandel (https://github.com/sastan)",
+  "engines": {
+    "vscode": "^1.53.0"
+  },
+  "keywords": [
+    "twind",
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "intellisense",
+    "autocomplete",
+    "vscode"
+  ],
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/config/twind.config.ts",
+    "workspaceContains:**/config/twind.config.js",
+    "workspaceContains:**/config/twind.config.mjs",
+    "workspaceContains:**/config/twind.config.cjs",
+    "workspaceContains:**/src/twind.config.ts",
+    "workspaceContains:**/src/twind.config.js",
+    "workspaceContains:**/src/twind.config.mjs",
+    "workspaceContains:**/src/twind.config.cjs",
+    "workspaceContains:**/public/twind.config.ts",
+    "workspaceContains:**/public/twind.config.js",
+    "workspaceContains:**/public/twind.config.mjs",
+    "workspaceContains:**/public/twind.config.cjs",
+    "workspaceContains:**/twind.config.ts",
+    "workspaceContains:**/twind.config.js",
+    "workspaceContains:**/twind.config.mjs",
+    "workspaceContains:**/twind.config.cjs",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact"
+  ],
+  "contributes": {
+    "typescriptServerPlugins": [
+      {
+        "name": "@twind/typescript-plugin",
+        "enableForWorkspaceTypeScriptVersions": true
+      }
+    ],
+    "configuration": [
+      {
+        "id": "twind",
+        "title": "Twind",
+        "properties": {
+          "twind.tags": {
+            "type": "array",
+            "description": "List of template tags to enable Twind intellisense in.",
+            "items": {
+              "type": "string",
+              "description": "Tag name."
+            },
+            "default": [
+              "tw",
+              "apply"
+            ]
+          },
+          "twind.attributes": {
+            "type": "array",
+            "description": "List of html/jsx attributes to enable Twind intellisense in.",
+            "items": {
+              "type": "string",
+              "description": "Attribute name."
+            },
+            "default": [
+              "tw",
+              "className",
+              "class"
+            ]
+          },
+          "twind.styles": {
+            "type": "array",
+            "description": "List of style/styled functions to enable Twind intellisense in.",
+            "items": {
+              "type": "string",
+              "description": "Style function name."
+            },
+            "default": [
+              "style",
+              "styled"
+            ]
+          },
+          "twind.debug": {
+            "type": "boolean",
+            "description": "Enable/disable additional debug information.",
+            "default": false
+          }
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "@twind/typescript-plugin": "0.3.0"
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "yarn run build",
+    "build": "esbuild src/extension.ts --outdir=out --bundle --minify --format=cjs --platform=node --sourcemap=external --target=es2018 --external:vscode",
+    "watch": "yarn run build --watch",
+    "pretest": "yarn run build && yarn run lint",
+    "test": "node ./out/test/run.js"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.53.0",
+    "esbuild": "^0.9.6",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true
+  }
+}
