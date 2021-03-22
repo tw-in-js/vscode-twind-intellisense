@@ -14,15 +14,16 @@
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@twind/typescript-plugin@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/@twind/typescript-plugin/-/typescript-plugin-0.3.1.tgz#94a841bafc838a553f796999ac329aba605f6478"
-  integrity sha512-hRg8Wb7Ke+50BnrBspz+sBGJwqybqkv54e/t/6VncfsJKxeVQHjuM8BViArBzmYzyuGeriSOiF3PItcYTKbNOg==
+"@twind/typescript-plugin@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@twind/typescript-plugin/-/typescript-plugin-0.3.2.tgz#26af8ff82dcdd79c2dc59ff354cac124f2f7aaca"
+  integrity sha512-a96A+iachKZsiFWV6xNzo0NMiV2cAnTzDO6bMYdbvTcqvXPcW9FzOGVXNeymAd7phAmQ1ruRZ4PcUV8ES7ijjA==
   dependencies:
     cssbeautify "^0.3.1"
     esbuild "^0.9.3"
+    fast-json-stable-stringify "^2.1.0"
     match-sorter "^6.3.0"
-    twind "^0.16.6"
+    twind "^0.16.8"
     typescript "^4.1.0"
     typescript-template-language-service-decorator "^2.2.0"
     vscode-languageserver-types "^3.13.0"
@@ -165,6 +166,11 @@ esbuild@^0.9.3, esbuild@^0.9.6:
   version "0.9.6"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.9.6.tgz#2cae519e7ce2328ecf57ae738090d07ce7245850"
   integrity sha512-F6vASxU0wT/Davt9aj2qtDwDNSkQxh9VbyO56M7PDWD+D/Vgq/rmUDGDQo7te76W5auauVojjnQr/wTu3vpaUA==
+
+fast-json-stable-stringify@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz#874bf69c6f404c2b5d99c481341399fd55892633"
+  integrity sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -361,10 +367,10 @@ style-vendorizer@^2.0.0:
   resolved "https://registry.npmjs.org/traverse/-/traverse-0.3.9.tgz#717b8f220cc0bb7b44e40514c22b2e8bbc70d8b9"
   integrity sha1-cXuPIgzAu3tE5AUUwisui7xw2Lk=
 
-twind@^0.16.6:
-  version "0.16.7"
-  resolved "https://registry.npmjs.org/twind/-/twind-0.16.7.tgz#1d57cbe8a63ddf6ac1d19e8595c20bb4c1a8c95c"
-  integrity sha512-OuYft+pWBK9XjswVbVQlaVL7JXnOWj9maAqUuUEel1q8bnkjb9MOb8Vw9W+OGvMsV0T5/BrhEYf0ZDN1SDZDpg==
+twind@^0.16.8:
+  version "0.16.8"
+  resolved "https://registry.npmjs.org/twind/-/twind-0.16.8.tgz#164da6c889cb52607915bd5b97e62c969ca10cc3"
+  integrity sha512-9mnQS/q1U+U6cRSdoE/PozGSOpENZWjS/MOFzcd4dpCZQRWoGa5DKBuTRJiHZdSO9ClEnFjlVB8dGR4w4yTimw==
   dependencies:
     csstype "^3.0.5"
     htmlparser2 "^6.0.0"

@@ -173,13 +173,17 @@ You can enable IntelliSense for other `style` like functions by configuring `twi
 
 Allows to enabling/disabling additional debug information shown in hover and completion popups (default: `false`) by configuring `twind.debug`.
 
+### Enable
+
+Allows to enabling/disabling the extension (default: `true`).
+
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 ## Release Notes
 
-See [the changelog](https://github.com/tw-in-js/vscode-twind-intellisense/blob/main/CHANGELOG.md).
+See [the releases page](https://github.com/tw-in-js/vscode-twind-intellisense/releases).
 
 ## For more information
 
