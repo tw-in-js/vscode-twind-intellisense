@@ -14,7 +14,7 @@
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@twind/typescript-plugin@^0.3.2":
+"@twind/typescript-plugin@0.3.2":
   version "0.3.2"
   resolved "https://registry.npmjs.org/@twind/typescript-plugin/-/typescript-plugin-0.3.2.tgz#26af8ff82dcdd79c2dc59ff354cac124f2f7aaca"
   integrity sha512-a96A+iachKZsiFWV6xNzo0NMiV2cAnTzDO6bMYdbvTcqvXPcW9FzOGVXNeymAd7phAmQ1ruRZ4PcUV8ES7ijjA==

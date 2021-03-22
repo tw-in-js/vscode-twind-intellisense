@@ -1,13 +1,13 @@
 // Based on https://github.com/mjbvz/vscode-lit-html/blob/master/src/index.ts
 import * as vscode from 'vscode'
 
+import {name, version as extensionVersion, publisher} from '../package.json'
+
 const typeScriptExtensionId = 'vscode.typescript-language-features'
 const pluginId = '@twind/typescript-plugin'
 const configurationSection = 'twind'
 
-// the application insights key (also known as instrumentation key)
-const extensionName = process.env.EXTENSION_NAME || 'dev.twind-intellisense'
-const extensionVersion = process.env.EXTENSION_VERSION || '0.0.0'
+const extensionName = `${publisher}.${name}`
 
 interface SynchronizedConfiguration {
   tags: ReadonlyArray<string>

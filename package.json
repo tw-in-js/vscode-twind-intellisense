@@ -131,7 +131,7 @@
     ]
   },
   "dependencies": {
-    "@twind/typescript-plugin": "^0.3.2"
+    "@twind/typescript-plugin": "0.3.2"
   },
   "main": "./out/extension.js",
   "scripts": {
