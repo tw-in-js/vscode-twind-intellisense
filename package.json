@@ -131,12 +131,12 @@
     ]
   },
   "dependencies": {
-    "@twind/typescript-plugin": "0.3.2"
+    "@twind/typescript-plugin": "0.3.3"
   },
   "main": "./out/extension.js",
   "scripts": {
     "vscode:prepublish": "yarn run build",
-    "build": "esbuild src/extension.ts --outdir=out --bundle --format=cjs --platform=node --sourcemap=external --target=es2018 --external:vscode",
+    "build": "esbuild src/extension.ts --outdir=out --bundle --format=cjs --platform=node --sourcemap=external --target=node10.9 --external:vscode",
     "watch": "yarn run build --watch",
     "pretest": "yarn run build && yarn run lint",
     "release": "npx np",
