@@ -40,26 +40,7 @@
   ],
   "activationEvents": [
     "onCommand:twind.restart",
-    "workspaceContains:config/twind.config.ts",
-    "workspaceContains:config/twind.config.js",
-    "workspaceContains:config/twind.config.mjs",
-    "workspaceContains:config/twind.config.cjs",
-    "workspaceContains:src/twind.config.ts",
-    "workspaceContains:src/twind.config.js",
-    "workspaceContains:src/twind.config.mjs",
-    "workspaceContains:src/twind.config.cjs",
-    "workspaceContains:public/twind.config.ts",
-    "workspaceContains:public/twind.config.js",
-    "workspaceContains:public/twind.config.mjs",
-    "workspaceContains:public/twind.config.cjs",
-    "workspaceContains:twind.config.ts",
-    "workspaceContains:twind.config.js",
-    "workspaceContains:twind.config.mjs",
-    "workspaceContains:twind.config.cjs",
-    "onLanguage:javascript",
-    "onLanguage:javascriptreact",
-    "onLanguage:typescript",
-    "onLanguage:typescriptreact"
+    "onStartupFinished"
   ],
   "contributes": {
     "typescriptServerPlugins": [
