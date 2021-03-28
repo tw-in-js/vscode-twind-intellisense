@@ -14,16 +14,17 @@
   resolved "https://registry.npmjs.org/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
-"@twind/typescript-plugin@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/@twind/typescript-plugin/-/typescript-plugin-0.3.3.tgz#5e88ff13bbb7dfecf4f1c793689cae018f7648de"
-  integrity sha512-PJednUU2zGJ8CuPun30ESbqjoKZLn6gMKX7BDNnKwCgJsJe6QnntMr64z9EgJV+5j2rZr9wwj6pJYWA7HNyLxg==
+"@twind/typescript-plugin@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.npmjs.org/@twind/typescript-plugin/-/typescript-plugin-0.3.4.tgz#1be4b178d9ea6fa9e0fd55eb9bc55a2f17af5a97"
+  integrity sha512-67MAlpxQwH8xdIv7KfOqisZ297ImtnG7xtpzdMv15ikzKGa8NnY+vcPohk+xejU4hADIP810iQ7Du241dFRlCA==
   dependencies:
+    clear-module "^4.1.1"
     cssbeautify "^0.3.1"
     fast-json-stable-stringify "^2.1.0"
     match-sorter "^6.3.0"
     sucrase "^3.17.1"
-    twind "^0.16.9"
+    twind "^0.16.10"
     typescript "^4.1.0"
     typescript-template-language-service-decorator "^2.2.0"
     vscode-languageserver-types "^3.13.0"
@@ -91,12 +92,25 @@ buffers@~0.1.1:
   resolved "https://registry.npmjs.org/buffers/-/buffers-0.1.1.tgz#b24579c3bed4d6d396aeee6d9a8ae7f5482ab7bb"
   integrity sha1-skV5w77U1tOWru5tmorn9Ugqt7s=
 
+callsites@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
+  integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
+
 chainsaw@~0.1.0:
   version "0.1.0"
   resolved "https://registry.npmjs.org/chainsaw/-/chainsaw-0.1.0.tgz#5eab50b28afe58074d0d58291388828b5e5fbc98"
   integrity sha1-XqtQsor+WAdNDVgpE4iCi15fvJg=
   dependencies:
     traverse ">=0.3.0 <0.4"
+
+clear-module@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/clear-module/-/clear-module-4.1.1.tgz#bf8ba3b62eb70ee1e0adec90589741425cf32db8"
+  integrity sha512-ng0E7LeODcT3QkazOckzZqbca+JByQy/Q2Z6qO24YsTp+pLxCfohGz2gJYJqZS0CWTX3LEUiHOqe5KlYeUbEMw==
+  dependencies:
+    parent-module "^2.0.0"
+    resolve-from "^5.0.0"
 
 commander@^4.0.0:
   version "4.1.1"
@@ -327,6 +341,13 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
+parent-module@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/parent-module/-/parent-module-2.0.0.tgz#fa71f88ff1a50c27e15d8ff74e0e3a9523bf8708"
+  integrity sha512-uo0Z9JJeWzv8BG+tRcapBKNJ0dro9cLyczGzulS6EfeyAdeC9sbojtW6XwvYxJkEne9En+J2XEl4zyglVeIwFg==
+  dependencies:
+    callsites "^3.1.0"
+
 path-is-absolute@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
@@ -366,6 +387,11 @@ remove-accents@0.4.2:
   version "0.4.2"
   resolved "https://registry.npmjs.org/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
   integrity sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
+
+resolve-from@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
+  integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
 rimraf@2:
   version "2.7.1"
@@ -439,10 +465,10 @@ ts-interface-checker@^0.1.9:
   resolved "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz#784fd3d679722bc103b1b4b8030bcddb5db2a699"
   integrity sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==
 
-twind@^0.16.9:
-  version "0.16.9"
-  resolved "https://registry.npmjs.org/twind/-/twind-0.16.9.tgz#62d04a12d4a96f5f1e72e477af4e8634f356eaac"
-  integrity sha512-cOpijhtEMEaIhHQ4H3+K/APn1kAYkMtV3fMB/zBfXP+rmKiwjnNZSot8w8YNGnKDqLbV+uCSuFiZtPL60Jscaw==
+twind@^0.16.10:
+  version "0.16.10"
+  resolved "https://registry.npmjs.org/twind/-/twind-0.16.10.tgz#9e7ac848b48568fc4a49fc8ea2d218cbbadb9aab"
+  integrity sha512-GjTPjEbon/Z2FOVsEVkF6nCXqdpmNtlcfIC3p4zwWm+WUsLraryW2OK6pkWwjkXPVwWZEm0RTjzsWOuPs3gaHQ==
   dependencies:
     csstype "^3.0.5"
     htmlparser2 "^6.0.0"
