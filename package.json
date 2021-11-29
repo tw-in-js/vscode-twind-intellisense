@@ -53,6 +53,10 @@
       {
         "command": "twind.restart",
         "title": "Twind: Restart IntelliSense"
+      },
+      {
+        "command": "twind.className",
+        "title": "Twind: Replace className strings"
       }
     ],
     "configuration": [

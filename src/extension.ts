@@ -83,6 +83,25 @@ async function enableExtension(context: vscode.ExtensionContext, log: Logger) {
     }),
   )
 
+  const replaceClassNameStrings = () => {
+    const editor = vscode.window.activeTextEditor
+    if (editor) {
+      const document = editor.document
+      const selection = editor.selection
+      const word = document.getText(selection)
+      const replaced = word.replaceAll(/className="([^"].*)"/g, `className={tw\`$1\`}`)
+      editor.edit((editBuilder) => {
+        editBuilder.replace(selection, replaced)
+      })
+    }
+  }
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand('twind.className', () => {
+      replaceClassNameStrings()
+    }),
+  )
+
   const twindWatcher = vscode.workspace.createFileSystemWatcher(
     '**/node_modules/twind/package.json',
   )
