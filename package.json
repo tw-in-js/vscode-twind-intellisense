@@ -3,7 +3,7 @@
   "name": "twind-intellisense",
   "displayName": "Twind Intellisense",
   "description": "Intelligent Twind tooling for VS Code",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "preview": true,
   "publisher": "sastan",
   "icon": "assets/logo.png",
